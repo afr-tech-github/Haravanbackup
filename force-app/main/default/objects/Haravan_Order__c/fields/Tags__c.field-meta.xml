@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tags__c</fullName>
+    <externalId>false</externalId>
+    <label>Tags</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>10:00 - 11:00</fullName>
+                <default>false</default>
+                <label>10:00 - 11:00</label>
+            </value>
+            <value>
+                <fullName>F:VAT</fullName>
+                <default>false</default>
+                <label>F:VAT</label>
+            </value>
+            <value>
+                <fullName>Huyện Bình Chánh</fullName>
+                <default>false</default>
+                <label>Huyện Bình Chánh</label>
+            </value>
+            <value>
+                <fullName>Huyện Củ Chi</fullName>
+                <default>false</default>
+                <label>Huyện Củ Chi</label>
+            </value>
+            <value>
+                <fullName>Huyện Hóc Môn</fullName>
+                <default>false</default>
+                <label>Huyện Hóc Môn</label>
+            </value>
+            <value>
+                <fullName>Huyện Nhà Bè</fullName>
+                <default>false</default>
+                <label>Huyện Nhà Bè</label>
+            </value>
+            <value>
+                <fullName>Huyện Cần Giờ</fullName>
+                <default>false</default>
+                <label>Huyện Cần Giờ</label>
+            </value>
+            <value>
+                <fullName>Huyện Đan Phương</fullName>
+                <default>false</default>
+                <label>Huyện Đan Phương</label>
+            </value>
+            <value>
+                <fullName>Huyện Đông Anh</fullName>
+                <default>false</default>
+                <label>Huyện Đông Anh</label>
+            </value>
+            <value>
+                <fullName>KOC.VN</fullName>
+                <default>false</default>
+                <label>KOC.VN</label>
+            </value>
+            <value>
+                <fullName>Lark Base</fullName>
+                <default>false</default>
+                <label>Lark Base</label>
+            </value>
+            <value>
+                <fullName>Quận 11</fullName>
+                <default>false</default>
+                <label>Quận 11</label>
+            </value>
+            <value>
+                <fullName>Quận 12</fullName>
+                <default>false</default>
+                <label>Quận 12</label>
+            </value>
+            <value>
+                <fullName>Quận 3</fullName>
+                <default>false</default>
+                <label>Quận 3</label>
+            </value>
+            <value>
+                <fullName>Thành phố Thủ Đức</fullName>
+                <default>false</default>
+                <label>Thành phố Thủ Đức</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

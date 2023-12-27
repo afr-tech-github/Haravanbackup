@@ -1,0 +1,123 @@
+<aura:component controller="CustomerOrderInfoController"
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+    access="global">
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <ltng:require scripts="{!$Resource.chartJS}" afterScriptsLoaded="{!c.scriptsLoaded}" />
+    <ltng:require scripts="{!$Resource.chartJS1}" afterScriptsLoaded="{!c.scriptsLoaded}" />
+    <ltng:require scripts="{!$Resource.chartJS2}" afterScriptsLoaded="{!c.scriptsLoaded}" />
+    <ltng:require scripts="{!$Resource.chartJS3}" afterScriptsLoaded="{!c.scriptsLoaded}" />
+    <ltng:require scripts="{!$Resource.chartJS4}" afterScriptsLoaded="{!c.scriptsLoaded}" />
+    <ltng:require scripts="{!$Resource.chartJS5}" afterScriptsLoaded="{!c.scriptsLoaded}" />
+    <aura:attribute name="Account" type="Account" />
+    <aura:attribute name="lstLabelsChartSalesChannels" type="List" />
+    <aura:attribute name="lstDataChartSalesChannels" type="List" />
+    <aura:attribute name="customerAddress" type="String" />
+    <div id="main"
+        style="background:linear-gradient(315deg, #004AAD 0%, #5DC5E6 100%);border-radius: 7px; color: white;">
+        <div style="padding: 25px;">
+            <table style="width: 100%;">
+                <col width="8%" />
+                <col width="19%" />
+                <col width="43%" />
+                <col width="40%" />
+                <tr class="hover">
+                    <td colspan="2"
+                        style="{!IF(v.Account.PersonGenderIdentity != 'Female','','display:none;') + 'text-align: center;'}">
+                        <img style="border-radius: 50%;"
+                            src="https://afrcloudcomputingjsc3-dev-ed.develop.file.force.com/servlet/servlet.FileDownload?file=0155j000000Wgvi"
+                            alt="" />
+                    </td>
+                    <td colspan="2"
+                        style="{!IF(v.Account.PersonGenderIdentity == 'Female','','display:none;') + 'text-align: center;'}">
+                        <img style="border-radius: 50%;"
+                            src="https://afrcloudcomputingjsc3-dev-ed.develop.file.force.com/servlet/servlet.FileDownload?file=0155j000000Wgvn"
+                            alt="" />
+                    </td>
+                    <td colspan="2" style="text-align: left;">
+                        <p style="font-size: 18px; font-weight: bold;margin-left: 10px;">{!v.Account.Name}</p>
+                        <p style="font-size: 14px;margin-left: 10px;">{!v.Account.Customer_Level__c}
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="border-bottom: 1px solid white;padding-bottom: 18px;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;padding-top: 5px;">
+                        <p style="font-size: 25px;color: white;">{!v.Account.Ordered__c}+</p>
+                    </td>
+                    <td colspan="2" style="text-align: center;padding-top: 5px;">
+                        <p style="font-size: 25px;color: white;">
+                            <lightning:formattedNumber style="currency" value="{!v.Account.Total_Spent_Rollup__c}">
+
+                            </lightning:formattedNumber>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-weight: bold;font-size: 16px;text-align: center;">ORDERED</td>
+                    <td colspan="2" style="font-weight: bold;font-size: 16px;text-align: center;">TOTAL SPENT</td>
+                </tr>
+            </table>
+            <div>
+                <canvas width="200" height="180" aura:id="myChart2" class="myChart2"></canvas>
+            </div>
+            <table style="width: 100%;">
+                <col width="8%" />
+                <col width="19%" />
+                <col width="43%" />
+                <col width="40%" />
+                <br />
+                <tr>
+                    <td style="padding-bottom: 7px;">
+                        <img src="https://afrcloudcomputingjsc3-dev-ed.develop.file.force.com/servlet/servlet.ImageServer?id=0155j000000WgwM&amp;oid=00D5j00000CgcKN&amp;lastMod=1692784502000"
+                            alt="" />
+                    </td>
+                    <td colspan="3">
+                        <p style="font-size: 14px;">{!v.Account.PersonMobilePhone}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://afrcloudcomputingjsc3-dev-ed.develop.file.force.com/servlet/servlet.ImageServer?id=0155j000000WgwR&amp;oid=00D5j00000CgcKN&amp;lastMod=1692784536000"
+                            alt="" />
+                    </td>
+                    <td colspan="3">
+                        <p style="font-size: 14px;">{!v.Account.PersonEmail}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://afrcloudcomputingjsc3-dev-ed.develop.file.force.com/servlet/servlet.ImageServer?id=0155j000000WgwW&amp;oid=00D5j00000CgcKN&amp;lastMod=1692784648000"
+                            alt="" />
+                    </td>
+                    <td colspan="3">
+                        <p style="font-size: 14px;">
+                            {!v.customerAddress}
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="{!IF(v.Account.PersonGenderIdentity == 'Female','','display:none;') + 'text-align: center;'}">
+                        <img src="https://afrcloudcomputingjsc3-dev-ed.develop.file.force.com/servlet/servlet.ImageServer?id=0155j000000Wgwl&amp;oid=00D5j00000CgcKN&amp;lastMod=1692784899000"
+                            alt="" />
+                    </td>
+                    <td
+                        style="{!IF(v.Account.PersonGenderIdentity == 'Male','','display:none;') + 'text-align: center;'}">
+                        <img src="https://afrcloudcomputingjsc3-dev-ed.develop.file.force.com/servlet/servlet.ImageServer?id=0155j000000Wgwg&amp;oid=00D5j00000CgcKN&amp;lastMod=1692784919000"
+                            alt="" />
+                    </td>
+                    <td
+                        style="{!IF(v.Account.PersonGenderIdentity != 'Female' &amp;&amp; v.Account.PersonGenderIdentity != 'Male','','display:none;') + 'text-align: center;'}">
+                        <img src="https://afrcloudcomputingjsc3-dev-ed.develop.file.force.com/servlet/servlet.ImageServer?id=0155j000000Wgwq&amp;oid=00D5j00000CgcKN&amp;lastMod=1692784945000"
+                            alt="" />
+                    </td>
+                    <td colspan="3">
+                        <p style="font-size: 14px;">{!v.Account.PersonBirthdate}</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</aura:component>

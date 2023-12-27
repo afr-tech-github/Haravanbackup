@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>VNĐ</fullName>
+        <default>false</default>
+        <label>VNĐ</label>
+    </customValue>
+    <customValue>
+        <fullName>Tệ</fullName>
+        <default>false</default>
+        <label>Tệ</label>
+    </customValue>
+    <masterLabel>Currency</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

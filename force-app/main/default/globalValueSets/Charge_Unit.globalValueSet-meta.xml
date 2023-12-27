@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Kg</fullName>
+        <default>true</default>
+        <label>Kg</label>
+    </customValue>
+    <customValue>
+        <fullName>CBM</fullName>
+        <default>false</default>
+        <label>CBM</label>
+    </customValue>
+    <customValue>
+        <fullName>Chuyến</fullName>
+        <default>false</default>
+        <label>Chuyến</label>
+    </customValue>
+    <customValue>
+        <fullName>Lần</fullName>
+        <default>false</default>
+        <label>Lần</label>
+    </customValue>
+    <customValue>
+        <fullName>Cái</fullName>
+        <default>false</default>
+        <label>Cái</label>
+    </customValue>
+    <customValue>
+        <fullName>Bịch</fullName>
+        <default>false</default>
+        <label>Bịch</label>
+    </customValue>
+    <customValue>
+        <fullName>Kiện</fullName>
+        <default>false</default>
+        <label>Kiện</label>
+    </customValue>
+    <masterLabel>Charge Unit</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

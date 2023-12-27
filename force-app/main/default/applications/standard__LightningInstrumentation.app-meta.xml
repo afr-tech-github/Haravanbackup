@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>LightningInstrumentation</label>
+    <navType>Standard</navType>
+    <tabs>standard-LightningInstrumentation</tabs>
+    <tabs>Country__c</tabs>
+    <tabs>Province__c</tabs>
+    <tabs>District__c</tabs>
+    <tabs>Ward__c</tabs>
+    <tabs>Billing_Address__c</tabs>
+    <tabs>Haravan_Order__c</tabs>
+    <tabs>HaravanProductVariant__c</tabs>
+    <tabs>City__c</tabs>
+    <tabs>StockOut__c</tabs>
+    <tabs>Person_Account_Relationship__c</tabs>
+    <tabs>Customer_Addresses__c</tabs>
+    <tabs>Default_Address__c</tabs>
+    <tabs>PO__c</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

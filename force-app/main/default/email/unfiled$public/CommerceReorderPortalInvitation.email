@@ -1,0 +1,11 @@
+<html>
+            {!Receiving_User.FirstName} 您好，
+            <p>
+            查看此重新訂購入口網頁，以瞭解能更容易透過 {!Organization.Name} 重複下單的方式。您可以檢視過去訂單、修改數量、下新訂單及檢視訂單狀態。
+            </p>
+            <p>
+            按一下連結進行存取：<a href={!Community_URL}>{!Community_Name}</a>
+            </p>
+            順頌商祺！<br>
+            {!Sending_User.Name}
+            </html>

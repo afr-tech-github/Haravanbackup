@@ -1,0 +1,7 @@
+.THIS table, .THIS th, .THIS td{
+    /* text-align: center; */
+}
+
+.THIS .hover {
+    cursor: grab;
+}

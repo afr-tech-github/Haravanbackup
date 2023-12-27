@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_Te__c</fullName>
+    <externalId>false</externalId>
+    <label>Price Tệ</label>
+    <summarizedField>PO_Product__c.Total_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>PO_Product__c.Currency__c</field>
+        <operation>equals</operation>
+        <value>Tệ</value>
+    </summaryFilterItems>
+    <summaryForeignKey>PO_Product__c.Purchase_Order__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

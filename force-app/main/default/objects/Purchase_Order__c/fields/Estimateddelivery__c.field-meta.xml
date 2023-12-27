@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimateddelivery__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Ngày dự kiến hàng sẽ giao tới kho</inlineHelpText>
+    <label>Estimated delivery</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

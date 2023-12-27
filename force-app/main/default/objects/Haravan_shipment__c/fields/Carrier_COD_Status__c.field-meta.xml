@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Carrier_COD_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Carrier COD Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chưa lấy</fullName>
+                <default>false</default>
+                <label>Chưa lấy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

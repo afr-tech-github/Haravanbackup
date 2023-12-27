@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Cost_of_Goods_VND__c</fullName>
+    <externalId>false</externalId>
+    <label>Total Cost of Goods (VND)</label>
+    <summarizedField>F_tms_Bill_Transaction__c.Total_Convert_to_VN__c</summarizedField>
+    <summaryForeignKey>F_tms_Bill_Transaction__c.Outbound_Transaction__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

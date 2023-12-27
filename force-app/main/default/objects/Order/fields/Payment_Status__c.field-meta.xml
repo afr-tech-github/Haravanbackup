@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Payment Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chờ xử lý</fullName>
+                <default>false</default>
+                <label>Chờ xử lý</label>
+            </value>
+            <value>
+                <fullName>Thanh toán một phần</fullName>
+                <default>false</default>
+                <label>Thanh toán một phần</label>
+            </value>
+            <value>
+                <fullName>Đã thanh toán</fullName>
+                <default>false</default>
+                <label>Đã thanh toán</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QUANTITY_1__c</fullName>
+    <externalId>false</externalId>
+    <label>Quantity</label>
+    <summarizedField>Haravan_Order_item__c.Quantity__c</summarizedField>
+    <summaryForeignKey>Haravan_Order_item__c.Haravan_Order__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>邀請連絡人加入 Commerce 重新訂購入口網頁。</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Commerce 重新訂購入口網頁：邀請</name>
+    <style>none</style>
+    <subject>歡迎來到{!Community_Name}</subject>
+    <textOnly>&lt;html&gt;
+            {!Receiving_User.FirstName} 您好，
+            &lt;p&gt;
+            查看此重新訂購入口網頁，以瞭解能更容易透過 {!Organization.Name} 重複下單的方式。您可以檢視過去訂單、修改數量、下新訂單及檢視訂單狀態。
+            &lt;/p&gt;
+            &lt;p&gt;
+            按一下連結進行存取：&lt;a href={!Community_URL}&gt;{!Community_Name}&lt;/a&gt;
+            &lt;/p&gt;
+            順頌商祺！&lt;br&gt;
+            {!Sending_User.Name}
+            &lt;/html&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

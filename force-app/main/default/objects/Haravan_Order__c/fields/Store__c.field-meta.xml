@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Store__c</fullName>
+    <externalId>false</externalId>
+    <label>Store</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Quận 3 - HCM</fullName>
+                <default>false</default>
+                <label>Quận 3 - HCM</label>
+            </value>
+            <value>
+                <fullName>Quận 1 - HCM</fullName>
+                <default>false</default>
+                <label>Quận 1 - HCM</label>
+            </value>
+            <value>
+                <fullName>Đống Đa - HN</fullName>
+                <default>false</default>
+                <label>Đống Đa - HN</label>
+            </value>
+            <value>
+                <fullName>Long Biên - HN</fullName>
+                <default>false</default>
+                <label>Long Biên - HN</label>
+            </value>
+            <value>
+                <fullName>Hoàn Kiếm - HN</fullName>
+                <default>false</default>
+                <label>Hoàn Kiếm - HN</label>
+            </value>
+            <value>
+                <fullName>Hưng Yên</fullName>
+                <default>false</default>
+                <label>Hưng Yên</label>
+            </value>
+            <value>
+                <fullName>Việt Trì</fullName>
+                <default>false</default>
+                <label>Việt Trì</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

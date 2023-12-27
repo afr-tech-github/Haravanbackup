@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customLabels>
+        <label><!-- Activate PMT Resource Allocation trigger --></label>
+        <name>inov8__PMT_ActivateReourceAllocationTrigger</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- PMT_DefaultProgramSelected --></label>
+        <name>inov8__PMT_DefaultProgramSelected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- PMT_DefaultProjectProgressSelected --></label>
+        <name>inov8__PMT_DefaultProjectProgressSelected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Default PMT resource availability --></label>
+        <name>inov8__PMT_Default_Resource_Availability</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Fiscal year starting month --></label>
+        <name>inov8__PMT_FiscalYearStartMonth</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Number of year resource availability need be created --></label>
+        <name>inov8__PMT_NumberOfYearsAvailabilityToBeCreated</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Package Namespace for PMT --></label>
+        <name>inov8__PMT_Package_Namespace</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- PMT Project Record Type on Case --></label>
+        <name>inov8__PMT_Project_Record_Type_on_Case</name>
+    </customLabels>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Account_Trigger_Flow_to_Update_Gender_Email_Marketing_Accept</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>B_a_kh_ch</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Create_Task</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Delete_Data_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Order_Cancel_Order</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>AccountName11</name>
+                </fields>
+                <fields>
+                    <name>accountName</name>
+                </fields>
+                <fields>
+                    <name>customernote</name>
+                </fields>
+                <name>screen_1</name>
+            </screens>
+        </flows>
+        <fullName>Order_Display_Related_information_In_Haravan_Order</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Order_Item_Update_quantity_to_Stock_out</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>Primary_Relationship</name>
+                </fields>
+                <fields>
+                    <name>Second_Relationship</name>
+                </fields>
+                <fields>
+                    <name>typerelationshiptype</name>
+                </fields>
+                <name>Relationshiptype</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>columns</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>isShowSearchBar</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>maxRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>minRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>selectionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <name>PersonAccountList</name>
+                </fields>
+                <fields>
+                    <name>choosepersonaccount</name>
+                </fields>
+                <name>Screen_Show_All_Person_Account</name>
+            </screens>
+        </flows>
+        <fullName>Person_Account_Create_Person_Account_Relationship</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Product_Varriant_Roll_up_Quantity</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>columns</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>isShowSearchBar</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>minRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>selectionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>shouldDisplayLabel</name>
+                        <value/>
+                    </inputParameters>
+                    <name>PO_Database</name>
+                </fields>
+                <name>screen_1</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>showwzz</name>
+                </fields>
+                <name>screen_2</name>
+            </screens>
+        </flows>
+        <fullName>Purchase_Order_Create_Stock_In</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Transaction_PO_Update_fields_from_Purchase_Order</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Update_Deduction_Amount_based_on_Deposit</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>inov8__PMT_Create_Resource_Availability_on_User_activation1</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>FromActiveUser</name>
+            </choices>
+            <choices>
+                <name>FromResourceAllocation</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>Recordsupdatedsuccessfully</name>
+                </fields>
+                <name>Finish</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>New_Assignee</name>
+                </fields>
+                <name>Update_Assignee</name>
+            </screens>
+        </flows>
+        <fullName>inov8__PMT_Mass_update_Task_Assignee</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>Error_Message</name>
+                </fields>
+                <name>Error_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>RecordsUpdatedSuccessfully</name>
+                </fields>
+                <name>Finished</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Status</name>
+                </fields>
+                <name>Mass_update_Task_Status</name>
+            </screens>
+        </flows>
+        <fullName>inov8__PMT_Mass_update_Task_Status</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>Clone_Phases_Tasks_from_Existing_Projects</name>
+            </choices>
+            <choices>
+                <name>Clone_Phases_Tasks_from_Project_Templates</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>ConfirmationMsg</name>
+                </fields>
+                <name>Confirmation_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>ErrorMessage</name>
+                </fields>
+                <name>FaultError</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>NoPhasesWarningMsg</name>
+                </fields>
+                <name>No_Phases_Warning</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>PhaseWarningMsg</name>
+                </fields>
+                <name>Phase_Warning_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>columns</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>minRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>selectionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>shouldDisplayLabel</name>
+                        <value/>
+                    </inputParameters>
+                    <name>PhaseTable</name>
+                </fields>
+                <name>Phases_Table</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>ProjectNameLabel</name>
+                </fields>
+                <fields>
+                    <name>Project_Name</name>
+                </fields>
+                <fields>
+                    <name>Start_Date</name>
+                </fields>
+                <name>ProjectNameSelection</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fieldApiName</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectApiName</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value/>
+                    </inputParameters>
+                    <name>ProjectNameSearch</name>
+                </fields>
+                <fields>
+                    <name>ProjectScreenLabel</name>
+                </fields>
+                <name>Project_Search</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>columns</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>minRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>selectionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>shouldDisplayLabel</name>
+                        <value/>
+                    </inputParameters>
+                    <name>TaskTable</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>columns</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>minRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>selectionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>shouldDisplayLabel</name>
+                        <value/>
+                    </inputParameters>
+                    <name>TemplateTaskTable</name>
+                </fields>
+                <name>Tasks_Table</name>
+            </screens>
+        </flows>
+        <fullName>inov8__PMT_Project_Templates</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>inov8__PMT_Update_Task_status_and_percentage_completion</fullName>
+    </flowDefinitions>
+    <quickActions>
+        <label><!-- Guest Community Case --></label>
+        <name>GuestCommunityCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewAccount --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Community Case --></label>
+        <name>NewCommunityCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewEvent --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewNote --></label>
+        <name>NewNote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewTask --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- Accounts with Haravan Order with Haravan Product --></description>
+        <label><!-- Accounts with Haravan Order with Haravan Product --></label>
+        <name>Accounts_with_Haravan_Order_with_Haravan_Product</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Haravan Order --></label>
+            <name>Haravan Order</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Haravan Order with Order Item --></description>
+        <label><!-- Accounts with Haravan Order with Order Item --></label>
+        <name>Accounts_with_Haravan_Order_with_Order_Item</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Haravan Order --></label>
+            <name>Haravan Order</name>
+        </sections>
+        <sections>
+            <label><!-- Order Item --></label>
+            <name>Order Item</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Customer -&gt; Order -&gt; Product --></description>
+        <label><!-- Customer -&gt; Order -&gt; Product --></label>
+        <name>Customer_Order_Product</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Haravan Order --></label>
+            <name>Haravan Order</name>
+        </sections>
+        <sections>
+            <label><!-- Order Item --></label>
+            <name>Order Item</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Haravan Order --></description>
+        <label><!-- Haravan Order --></label>
+        <name>Haravan_Order</name>
+        <sections>
+            <label><!-- Haravan Order --></label>
+            <name>Haravan Order</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Haravan Order Item --></description>
+        <label><!-- Haravan Order Item --></label>
+        <name>Haravan_Order_Item</name>
+        <sections>
+            <label><!-- Order Item --></label>
+            <name>Order Item</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Haravan Product with Product Variants with Stock In --></description>
+        <label><!-- Haravan Product with Product Variants with Stock In --></label>
+        <name>Haravan_Product_with_Product_Variants_with_Stock_In</name>
+        <sections>
+            <label><!-- Haravan Product --></label>
+            <name>Haravan Product</name>
+        </sections>
+        <sections>
+            <label><!-- Product Variants --></label>
+            <name>Product Variants</name>
+        </sections>
+        <sections>
+            <label><!-- Stock In --></label>
+            <name>Stock In</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Haravan Product with Product Variants with Stock Out --></description>
+        <label><!-- Haravan Product with Product Variants with Stock Out --></label>
+        <name>Haravan_Product_with_Product_Variants_with_Stock_Out</name>
+        <sections>
+            <label><!-- Haravan Product --></label>
+            <name>Haravan Product</name>
+        </sections>
+        <sections>
+            <label><!-- Product Variants --></label>
+            <name>Product Variants</name>
+        </sections>
+        <sections>
+            <label><!-- Stock Out --></label>
+            <name>Stock Out</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- PMT Project, Phases and Task details --></description>
+        <label><!-- PMT Project, Phases and Task details --></label>
+        <name>PMT_Project_Phases_and_Task_details</name>
+        <sections>
+            <label><!-- PMT Phases --></label>
+            <name>PMT Phases</name>
+        </sections>
+        <sections>
+            <label><!-- PMT Projects --></label>
+            <name>PMT Projects</name>
+        </sections>
+        <sections>
+            <label><!-- PMT Tasks --></label>
+            <name>PMT Tasks</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- PMT Project, Resource Allocation and Availability --></description>
+        <label><!-- PMT Project, Resource Allocation and Availability --></label>
+        <name>PMT_Project_Resource_Allocation_and_Availability</name>
+        <sections>
+            <label><!-- PMT Projects --></label>
+            <name>PMT Projects</name>
+        </sections>
+        <sections>
+            <label><!-- PMT Resource Allocations --></label>
+            <name>PMT Resource Allocations</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Purchase Order + Product --></description>
+        <label><!-- Purchase Order + Product --></label>
+        <name>Purchase_Order_Product</name>
+        <sections>
+            <label><!-- Purchase Order --></label>
+            <name>Purchase Order</name>
+        </sections>
+        <sections>
+            <label><!-- Stock In --></label>
+            <name>Stock In</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Purchase Order with Buying Cost with F/TMS Bill + Transaction --></description>
+        <label><!-- Purchase Order with Buying Cost with F/TMS Bill + Transaction --></label>
+        <name>Purchase_Order_with_Buying_Cost_with_F_TMS_Bill_Transaction</name>
+        <sections>
+            <label><!-- Buying Cost --></label>
+            <name>Buying Cost</name>
+        </sections>
+        <sections>
+            <label><!-- F/TMS Bill + Transaction --></label>
+            <name>F/TMS Bill + Transaction</name>
+        </sections>
+        <sections>
+            <label><!-- Purchase Order --></label>
+            <name>Purchase Order</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Screen Flows --></description>
+        <label><!-- Screen Flows --></label>
+        <name>screen_flows_prebuilt_crt</name>
+        <sections>
+            <label><!-- Flow Interview Log Entries --></label>
+            <name>Flow Interview Log Entries</name>
+        </sections>
+        <sections>
+            <label><!-- Flow Interview Logs --></label>
+            <name>Flow Interview Logs</name>
+        </sections>
+    </reportTypes>
+</Translations>

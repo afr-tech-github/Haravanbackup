@@ -1,0 +1,105 @@
+<aura:component controller="CustomerOrderInfoController"
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+    access="global">
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <aura:attribute name="Order" type="Haravan_Order__c" />
+    <!-- <aura:attribute name="BillingAddress" type="String"/> -->
+     <aura:attribute name="AccountId" type="String"/>
+     <aura:attribute name="billingAddress" type="String"/>
+    <div id="main" style="background-color: white;border-radius: 7px;">
+        <div style="padding: 25px;">
+            <!-- <div style="width: 30%;">
+                <img src="https://trailblazercommunitygroups.com/static/images/placeholder_avatar.png" alt="" />
+            </div> -->
+            <!-- <div style="width: 70%;">
+                <p>{!v.Order.Customer__r.Name}</p>
+                <p>{!v.Order.Customer__r.PersonBirthdate}</p>
+            </div> -->
+            <table style="width: 100%;">
+                <col width="8%" />
+                <col width="19%" />
+                <col width="43%" />
+                <col width="40%" />
+                <tr onclick="{!c.onClickAccount}" class="hover">
+                    <!-- <td colspan="2" style="text-align: center;">
+                        <img src="https://trailblazercommunitygroups.com/static/images/placeholder_avatar.png" alt="" />
+                    </td> -->
+                    <td colspan="2" style="{!IF(v.Order.Customer__r.PersonGenderIdentity != 'Female','','display:none;') + 'text-align: center;'}">
+                        <img style="border-radius: 50%;" src="https://afrcloudcomputingjsc3-dev-ed.develop.file.force.com/servlet/servlet.FileDownload?file=0155j000000Wgvi" alt="" />
+                    </td>
+                    <td colspan="2"  style="{!IF(v.Order.Customer__r.PersonGenderIdentity == 'Female','','display:none;') + 'text-align: center;'}">
+                        <img style="border-radius: 50%;" src="https://afrcloudcomputingjsc3-dev-ed.develop.file.force.com/servlet/servlet.FileDownload?file=0155j000000Wgvn" alt="" />
+                    </td>
+                    <td colspan="2" style="text-align: left;">
+                        <p style="font-size: 18px; font-weight: bold;margin-left: 10px;">{!v.Order.Customer__r.Name}</p>
+                        <p style="font-size: 14px;margin-left: 10px;">{!v.Order.Customer__r.PersonBirthdate}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="border-bottom: 1px solid black;padding-bottom: 18px;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;padding-top: 5px;">
+                        <p style="font-size: 25px;color: #00A1E0;">{!v.Order.Customer__r.Total_Orders_Rollup__c}+</p>
+                    </td>
+                    <td colspan="2" style="text-align: center;padding-top: 5px;">
+                        <p style="font-size: 25px;color: #00A1E0;">
+                            <!-- {!v.Order.Customer__r.Total_Spent_Rollup__c}đ -->
+                            <lightning:formattedNumber style="currency" value="{!v.Order.Customer__r.Total_Spent_Rollup__c}">
+
+                            </lightning:formattedNumber>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-weight: bold;font-size: 16px;text-align: center;">ORDERED</td>
+                    <td colspan="2" style="font-weight: bold;font-size: 16px;text-align: center;">TOTAL SPENT</td>
+                </tr>
+                <br/>
+                <tr>
+                    <td colspan="4" style="text-align: left; font-size: 15px; font-weight: bold; padding-top: 15px;padding-bottom: 10px;">Contact Information</td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 7px;">
+                        <img style="width: 70%;" src="https://afrcloudcomputingjsc3-dev-ed.develop.file.force.com/servlet/servlet.ImageServer?id=0155j000000Wgri&amp;oid=00D5j00000CgcKN&amp;lastMod=1692776372000" alt=""/>
+                    </td>
+                    <td colspan="3">
+                        <p style="font-size: 14px;">{!v.Order.Customer__r.PersonMobilePhone}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img style="width: 70%;" src="https://afrcloudcomputingjsc3-dev-ed.develop.file.force.com/servlet/servlet.ImageServer?id=0155j000000Wgrn&amp;oid=00D5j00000CgcKN&amp;lastMod=1692776392000" alt=""/>
+                    </td>
+                    <td colspan="3">
+                        <p style="font-size: 14px;">{!v.Order.Customer__r.PersonEmail}</p>
+                    </td>
+                </tr>
+                <br/>
+                <tr>
+                    <td colspan="4" style="text-align: left; font-size: 15px; font-weight: bold; padding-top: 15px;padding-bottom: 10px;">Shipping Address</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img style="width: 70%;" src="https://afrcloudcomputingjsc3-dev-ed.develop.file.force.com/servlet/servlet.ImageServer?id=0155j000000Wgvd&amp;oid=00D5j00000CgcKN&amp;lastMod=1692776426000" alt=""/>
+                    </td>
+                    <td colspan="3">
+                        <p style="font-size: 14px;">{!v.billingAddress}</p>
+                    </td>
+                </tr>
+                <br/>
+                <tr>
+                    <td colspan="4" style="text-align: left; font-size: 15px; font-weight: bold; padding-top: 15px;padding-bottom: 10px;">Customer Note</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img style="width: 70%;" src="https://afrcloudcomputingjsc3-dev-ed.develop.file.force.com/servlet/servlet.ImageServer?id=0155j000000Wgr4&amp;oid=00D5j00000CgcKN&amp;lastMod=1692771631000" alt=""/>
+                    </td>
+                    <td colspan="3">
+                        <p style="font-size: 14px;">{!v.Order.Customer__r.Notes__c}</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</aura:component>

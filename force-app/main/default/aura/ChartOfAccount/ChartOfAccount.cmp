@@ -1,0 +1,27 @@
+<aura:component controller="CustomerOrderInfoController"
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+    access="global">
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <ltng:require scripts="{!$Resource.chartJS}" afterScriptsLoaded="{!c.scriptsLoaded}"/>
+    <ltng:require scripts="{!$Resource.chartJS1}" afterScriptsLoaded="{!c.scriptsLoaded}"/>
+    <ltng:require scripts="{!$Resource.chartJS2}" afterScriptsLoaded="{!c.scriptsLoaded}"/>
+    <ltng:require scripts="{!$Resource.chartJS3}" afterScriptsLoaded="{!c.scriptsLoaded}"/>
+    <ltng:require scripts="{!$Resource.chartJS4}" afterScriptsLoaded="{!c.scriptsLoaded}"/>
+    <ltng:require scripts="{!$Resource.chartJS5}" afterScriptsLoaded="{!c.scriptsLoaded}"/>
+    <aura:attribute name="Account" type="Account" />
+    <aura:attribute name="lstLabelsChartProductShow" type="List" />
+    <aura:attribute name="lstLabelsChartProduct" type="List" />
+    <aura:attribute name="lstDataChartProduct" type="List" />
+    <aura:attribute name="lstLabelsChartRevenue" type="List" />
+    <aura:attribute name="lstDataChartRevenue" type="List" />
+    <aura:attribute name="lstColor" type="List" />
+
+    <div style="display: flex; background-color: white;padding: 15px;border-radius: 7px;">
+        <div style="width: 50%;">
+            <canvas height="320" aura:id="myChart1" class="myChart1"></canvas>
+        </div>
+        <div style="width: 50%;">
+            <canvas aura:id="myChart" class="myChart"></canvas>
+        </div>
+    </div>
+</aura:component>

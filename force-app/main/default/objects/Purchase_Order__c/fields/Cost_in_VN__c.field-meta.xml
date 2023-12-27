@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_in_VN__c</fullName>
+    <externalId>false</externalId>
+    <label>Cost in VNĐ</label>
+    <summarizedField>Buying_Cost__c.Total_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>Buying_Cost__c.Currency__c</field>
+        <operation>equals</operation>
+        <value>VNĐ</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Buying_Cost__c.Purchase_Order__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>
